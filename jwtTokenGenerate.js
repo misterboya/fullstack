@@ -8,7 +8,7 @@ const value = {
 const token = jwt.sign(value, "secret");
 console.log(token);
 
-const decode = jwt.decode(token, "secret");
+const decode = jwt.decode(token);
 console.log("Decoded token " + decode);
 
 const verified = jwt.verify(token, "secret");
